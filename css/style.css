@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    color: #0004ff;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    color: #1c9a9c;
+  }
+
+  .cor1 {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #000000;
+  }
+
+  .cor1 .navbar-brand,
+  .cor1 .navbar-nav .nav-link,
+  .cor1 .navbar-toggler-icon,
+  .cor1 .navbar-nav .nav-item.active .nav-link,
+  .cor1 .navbar-nav .nav-item:hover .nav-link,
+  .cor1 .btn-outline-custom {
+      color: #00fbff;
+      border-color: #00fbff;
+  }
+  
+  .cor1 .btn-outline-custom:hover {
+      background-color: #00fbff;
+      color: #00fbff;
+  }
+
+  .entry-title-link {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  #scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Entry Image Styles */
+.entry-image-link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.entry-image-link img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.entry-image-link:hover .play-icon {
+  opacity: 1;
+}
+
+
+.entry-image-link:hover img {
+    transform: scale(1.1);
+}
+
+.entry-image-link:hover .play-icon {
+    opacity: 1;
+}
+
+.entry-image-link:hover .entry-title-link {
+    opacity: 0;
+}
+
+.navbar-toggler {
+  color: #fff;
+}
+
+.nav-link {
+  color: #00fbff !important; /* Cor dos links, substitua pela cor desejada com !important */
+}
+
+
+@media (max-width: 767px) {
+  .search-mobile {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    padding: 5px; /* Adicione algum preenchimento para melhorar a aparência */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mobile-column {
+    flex: 0 0 100%;    
+    max-width: 25%;
+    box-sizing: border-box; /* Evita que as bordas e o preenchimento afetem a largura real */
+    margin-bottom: 15px; /* Adiciona um espaçamento inferior para separar os blocos */
+    align-items: center;
+  }
+
+  .mobile-column img {
+    width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 100%; /* Evita que a imagem ultrapasse a altura do contêiner */
+    display: block; /* Evita espaçamentos indesejados abaixo da imagem */
+    margin-bottom: 10px;
+    max-width: 100%; /* Adiciona um espaçamento inferior para separar a imagem do texto */
+    object-fit: cover;
+  }
+
+  .mobile-column h5 {
+    margin-top: 0; /* Remove o espaçamento superior do título */
+    font-size: 8px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center; /* Centralize o texto */
+  }
+}
+
+
